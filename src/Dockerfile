@@ -1,8 +1,8 @@
-FROM alpine:3.8
+FROM alpine:3.11
 
 ENV LANG=C.UTF-8 \
     GLIBC_REPO=https://github.com/sgerrand/alpine-pkg-glibc \
-    GLIBC_VERSION=2.28-r0
+    GLIBC_VERSION=2.31-r0
 
 RUN set -eux && \
     apk upgrade -U && \
